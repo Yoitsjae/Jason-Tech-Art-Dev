@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+  font-family: 'Oswald', sans-serif;
+  background: linear-gradient(90deg, #232f3e, #fcdfd4);
+  color: #ffffff; /* White text for contrast */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #111; /* Match dark background */
+}
+
+header h1 {
+  font-size: 4rem; /* Large typography like the image */
+  color: #b39482; /* Bright yellow font for title */
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #999; /* Lighter text for subtitle */
+  margin: 10px 0;
+}
+
+/* Navigation */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #d8a9a9;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  color: #7c7180; /* Yellow hover effect for links */
+}
+
+.contact {
+  padding: 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact label {
+  margin: 10px 0 5px;
+}
+
+.contact input, .contact textarea {
+  padding: 10px;
+  border: 1px solid #b3c1b88e; /* Use primary color */
+  border-radius: 5px;
+}
+
+.contact button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #117a8b; /* Accent color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #0f666b; /* Darker shade for hover effect */
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  margin-right: 10px;
+}

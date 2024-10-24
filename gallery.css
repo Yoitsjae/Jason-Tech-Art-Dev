@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+  font-family: 'Oswald', sans-serif;
+  background: linear-gradient(90deg, #232f3e, #fcdfd4);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents sideways scrolling */
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(90deg, #232f3e, #fcdfd4);
+}
+
+header h1 {
+  font-size: 4rem;
+  color: #7e534b;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+header p.lead {
+  font-size: 1.5rem;
+  color: #1b0c0c;
+  margin: 10px 0;
+}
+
+/* Gallery Container */
+.gallery-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.gallery-item {
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.1);
+}
+
+.gallery-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.gallery-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item h2 {
+  margin-top: 15px;
+  font-size: 1.8rem;
+  color: #d5a5a5;
+  letter-spacing: 0.05em;
+}
+
+/* Image backgrounds */
+#art-portfolio {
+  background-image: url('images/art-portfolio.jpg'); /* Replace with actual image */
+}
+
+#website-image-portfolio {
+  background-image: url('images/website-image-portfolio.jpg'); /* Replace with actual image */
+}
+
+#ai-generated-images {
+  background-image: url('images/ai-generated-images.jpg'); /* Replace with actual image */
+}
+
+#monocraft-fantasy-gallery {
+  background-image: url('images/monocraft-fantasy-gallery.jpg'); /* Replace with actual image */
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer p {
+  color: #ffe600;
+  font-size: 1rem;
+}

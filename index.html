@@ -3,28 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jason Ncube - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
+        <h1>Jason Ncube | Aspiring Software Engineer & Creative Technologist</h1>
+        <p>Welcome to my portfolio showcasing technology and creative arts.</p>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="skills.html">Skills & Experience</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="artportfolio.html">Art Portfolio</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <h1>Jason Ncube</h1>
-            <h2>Aspiring Software Engineer & Creative Technologist</h2>
-            <p>Welcome to my portfolio. I’m passionate about technology, animation, and music.</p>
-            <a href="resume/resume.pdf" class="cta-button">View My CV</a>
+        <!-- Slideshow Section -->
+        <section class="slideshow-container">
+            <div class="mySlides">
+                <img src="images/Projects/1 kidigidgj.png" alt="Project 1">
+            </div>
+            <div class="mySlides">
+                <img src="images/Projects/2.png" alt="Project 1">
+            </div>
+            <div class="mySlides">
+                <img src="images/Projects/3.png" alt="Project 1">
+            </div>
+            <div class="mySlides">
+                <img src="images/Projects/4.png" alt="Project 1">
+            </div>
+            <div class="mySlides">
+                <img src="images/AI-images/1dev.jpg" alt="Project 1">
+            </div>
+            <div class="mySlides">
+                <img src="images/AI-images/2jae.jpg" alt="Project 1">
+            </div>
+            <div class="mySlides">
+                <img src="images/AI-images/3dev.jpg" alt="Project 1">
+            </div>
+            <div class="mySlides">
+                <img src="images/AI-images/4jae.jpg" alt="Project 1">
+            </div>
+            <div class="mySlides">
+                <img src="images/Art-portfolio/1 Jae Art.jpg" alt="Project 1">
+            </div>
+            <div class="mySlides">
+                <img src="images/Art-portfolio/2 Jae Art.jpg" alt="Project 1">
+            </div>
+            <div class="mySlides">
+                <img src="images/Art-portfolio/7 Jae Art.jpg" alt="Project 1">
+            </div>
+            <div class="mySlides">
+                <img src="images/Monocraft_FantasyGallery/50.jpg" alt="Project 1">
+            </div>
+            <div class="mySlides">
+                <img src="images/Monocraft_FantasyGallery/1,1.jpg" alt="Project 1">
+            </div>
+            <div class="mySlides">
+                <img src="images/Monocraft_FantasyGallery/9.jpg" alt="Project 1">
+            </div>
+            <!-- Add more slides as needed -->
+        </section>
+
+        <!-- Call to Action Buttons -->
+        <section class="cta">
+            <button onclick="window.location.href='projects.html'">Explore My Work</button>
+            <button onclick="window.location.href='contact.html'">Contact Me</button>
         </section>
     </main>
 
@@ -32,6 +84,32 @@
         <p>&copy; 2024 Jason Ncube. All rights reserved.</p>
     </footer>
 
-    <script src="js/scripts.js"></script>
+    <!-- Optional JS for Slideshow -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 4000); // Change slide every 4 seconds
+        }
+    </script>
 </body>
+<footer class="footer">
+    <ul class="footer-links">
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+    </ul>
+    <div class="social-icons">
+      <a href="#"><img src="icons/icons8-facebook.gif" alt="Facebook Icon"></a>
+      <a href="#"><img src="icons/icons8-instagram.gif" alt="Instagram Icon"></a>
+      <a href="#"><img src="icons/icons8-twitter.gif" alt="Twitter Icon"></a>
+  </div>
+  </footer>
 </html>

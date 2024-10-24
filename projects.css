@@ -1,0 +1,65 @@
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #111; /* Match dark background */
+}
+header h1 {
+  font-size: 4rem; /* Large typography like the image */
+  color: #b39482; /* Bright yellow font for title */
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #999; /* Lighter text for subtitle */
+  margin: 10px 0;
+}
+
+/* Navigation */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #d8a9a9;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  color: #7c7180; /* Yellow hover effect for links */
+}
+
+.projects {
+  padding: 20px;
+}
+
+.project-item {
+  margin-bottom: 30px;
+  border: 1px solid #b3c1b88e; /* Use primary color */
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.project-item h2 {
+  color: #117a8b; /* Accent color */
+}
+
+.project-item img {
+  max-width: 100%; /* Make images responsive */
+  height: auto;
+  border-radius: 5px; /* Rounded corners for images */
+}
+
+.project-item p {
+  margin-top: 10px;
+}
