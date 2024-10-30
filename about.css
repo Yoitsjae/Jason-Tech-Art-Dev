@@ -46,6 +46,18 @@ body {
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.button{
+  background: linear-gradient(90deg, #435a77, #eebba7);
+  color: #ffffff; /* Dark text on yellow button */
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 0 10px;
+}
 
 .text-section {
   flex: 1;
